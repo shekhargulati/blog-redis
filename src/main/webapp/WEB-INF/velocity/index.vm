@@ -1,0 +1,6 @@
+<h2>List of Blogs</h2>
+<ul>
+    #foreach($blog in $blogs)
+        <li><a href="blogs/${blog.id}">${blog.title}</a></li>
+    #end
+</ul>

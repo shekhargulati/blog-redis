@@ -1,0 +1,15 @@
+<h2>Create new Blog</h2>
+
+<form action="" method="POST">
+	
+	<label for="title">Title</label>
+  	<input type="text" name="title" id="title" required/></br>
+  	
+  	<label for="text">Text</label>
+  	
+  	<textarea id="text" name="text" rows="10" cols="10" required></textarea>
+  	<br>
+  	
+  	<input type="submit" value="Submit">
+
+</form>
