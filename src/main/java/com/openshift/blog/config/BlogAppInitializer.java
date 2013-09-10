@@ -15,7 +15,7 @@ public class BlogAppInitializer implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
         webApplicationContext.register(WebappConfig.class, AppConfig.class);
 
-        webApplicationContext.getEnvironment().setActiveProfiles("local");
+        webApplicationContext.getEnvironment().setActiveProfiles("openshift");
 
         Dynamic dynamic = servletContext.addServlet("blogApp", new DispatcherServlet(webApplicationContext));
         dynamic.setLoadOnStartup(1);
